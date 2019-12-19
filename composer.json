@@ -1,0 +1,25 @@
+{
+    "name": "litermi/performancelog",
+    "description": "Performance logging to elasticsearch",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Cotelo",
+            "email": "diego.cotelo@litermi.com"
+        }
+    ],
+    "require": { "guzzlehttp/guzzle": "^6.4"},
+    "autoload": {
+        "psr-4": {
+            "litermi\\performancelog\\": "src/"
+        }
+    },
+      "extra": {
+        "laravel": {
+            "providers": [
+                "litermi\\performancelog\\Providers\\performanceLogServiceProvider"
+            ]
+        }
+    }
+}
